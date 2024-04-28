@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Islmai" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/gold</item>
+        <item name="colorPrimaryVariant">@color/goldVariantColor</item>
+        <item name="android:statusBarColor">@color/goldVariantColor</item>
+    </style>
+
+    <style name="Theme.Islmai" parent="Base.Theme.Islmai" />
+    <style name="bottomNavigationStyle">
+        <item name="itemIconSize">40dp</item>
+        <item name="itemIconTint">@color/ic_bottom_navigation_view_selector</item>
+        <item name="itemTextColor">@color/ic_bottom_navigation_view_selector</item>
+        <item name="itemActiveIndicatorStyle">@null</item>
+        <item name="itemBackground">@null</item>
+        <item name="android:background">@color/gold</item>
+
+    </style>
+</resources>

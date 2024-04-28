@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/ic_hadeeth_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_hadeeth_image"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_percent=".2"
+
+        />
+    <View
+        android:id="@+id/first_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gold"
+        app:layout_constraintTop_toBottomOf="@id/ic_hadeeth_image"
+        android:layout_marginTop="8dp"
+        />
+    <TextView
+        android:id="@+id/hadeeth_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/first_horizontal_line"
+        android:layout_margin="16dp"
+        android:textSize="28sp"
+        android:text=" الأحاديث"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <View
+        android:id="@+id/second_horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/gold"
+        app:layout_constraintTop_toBottomOf="@id/hadeeth_name"
+        android:layout_marginTop="8dp"
+
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ahadeeth_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/second_horizontal_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
